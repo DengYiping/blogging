@@ -9,9 +9,9 @@ jobs:
     <<: *defaults
     steps:
       - checkout:
-        path: ~/blog/
+          path: ~/blog/
       - attach_workspace:
-        at: ~/blog/
+          at: ~/blog/
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -33,18 +33,18 @@ jobs:
     <<: *defaults
     steps:
       - checkout:
-        path: ~/blog/
+          path: ~/blog/
       - attach_workspace:
-        at: ~/blog/
+          at: ~/blog/
       - run: npm run test
   
   deploy:
     <<: *defaults
     steps:
       - checkout:
-        path: ~/blog/
+          path: ~/blog/
       - attach_workspace:
-        at: ~/blog/
+          at: ~/blog/
       - run:
         command: |
           sudo apt-get -y -qq install awscli
