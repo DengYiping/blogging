@@ -60,10 +60,6 @@ workflows:
   front-backend:
     jobs:
       - pre-build:
-          filters:
-            branches:
-              only:
-                - master
       - test:
           requires:
             - pre-build
