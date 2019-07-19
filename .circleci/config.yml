@@ -45,11 +45,15 @@ jobs:
           path: ~/blog/
       - attach_workspace:
           at: ~/blog/
+      - run: 
+          name: Install aws cli
+          command: sudo apt-get -y -qq install awscli
       - run:
-        command: |
-          sudo apt-get -y -qq install awscli
-          CI=false npm run build:ci
-          aws s3 sync public/ s3://loudcoder.com  --region ap-southeast-2 --delete
+          name: Build for deployment
+          command: CI=false npm run build:ci
+      - run:
+          name: Deploy to S3
+          command: aws s3 sync public/ s3://loudcoder.com --delete
 
 workflows:
   version: 2
