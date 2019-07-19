@@ -59,7 +59,7 @@ workflows:
   version: 2
   front-backend:
     jobs:
-      - pre-build:
+      - pre-build
       - test:
           requires:
             - pre-build
