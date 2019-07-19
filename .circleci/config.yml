@@ -50,3 +50,23 @@ jobs:
           sudo apt-get -y -qq install awscli
           CI=false npm run build:ci
           aws s3 sync public/ s3://loudcoder.com  --region ap-southeast-2 --delete
+
+workflows:
+  version: 2
+  front-backend:
+    jobs:
+      - pre-build:
+          filters:
+            branches:
+              only:
+                - master
+      - test:
+          requires:
+            - pre-build
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
