@@ -1,6 +1,7 @@
 ---
 title: Learn CS from scratch -- MapReduce
 date: "2017-05-01T22:12:03.284Z"
+description: Learn about the idea of MapReduce and how to use it to solve simple problem.
 ---
 In functional world, there is C-style for and while loop, and everything is based on recursion. However, sometimes, recursive algorithms can leads to problems in efficiency and readability.
 

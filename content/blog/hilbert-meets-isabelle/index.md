@@ -1,6 +1,7 @@
 ---
-title: Hilbet meets Isabelle
+title: Hilbert meets Isabelle
 date: "2015-05-01T22:12:03.284Z"
+description: The start of Hilbert meets Isabelle project.
 ---
 
 The study of Diophantine equation has always been people's interest. Although such equations are in a very primitive form, finding its solution seems less intuitive, and people, for centuries, strives to formulate the general solution, and no one has yet successfully achieve such a task.

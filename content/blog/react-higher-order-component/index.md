@@ -1,6 +1,7 @@
 ---
 title: React higher order components
 date: "2018-01-01"
+description: How to encapsulate state and write pure React components.
 ---
 React’s Higher Order Component brings mixin functionality to the frontend development world.
 
