@@ -60,9 +60,12 @@ const Bio = () => {
         {` `}
         <a href={`https://www.linkedin.com/in/${social.linkedin}`}>LinkedIn</a>
         {` `}
+        ,
+        <a href={`https://github.com/${social.github}`}>Github</a>.
+        {` `}
         and
         {` `}
-        <a href={`https://github.com/${social.github}`}>Github</a>.
+        <a href={`/resume.pdf`}>resume</a>.
       </p>
     </div>
   )
