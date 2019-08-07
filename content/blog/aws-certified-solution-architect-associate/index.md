@@ -1,6 +1,6 @@
 ---
 title: AWS certification - the good, the bad and the ugly
-date: "2015-08-07"
+date: "2019-08-07"
 description: How do I prepare for this certification
 ---
 Before I join Amazon, I've heard so many great things about AWS. In fact, this is the main reason I decided to apply and join this company.
